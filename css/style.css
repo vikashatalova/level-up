@@ -1,0 +1,820 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.wrapper {
+  min-width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#a32cdf), to(#0f5db6));
+  background: linear-gradient(to right, #a32cdf, #0f5db6);
+  color: #f0f0f0;
+}
+
+.full-screen {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 15px;
+}
+
+.full-screen__body {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full-screen__title {
+  font-size: 54px;
+  letter-spacing: 25px;
+  font-weight: 700;
+  margin: 0px 0px 75px 0;
+  color: #f0f0f0;
+}
+
+.full-screen__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full-screen__image {
+  margin: 0px 60px 0px 0px;
+}
+
+.full-screen__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.full-screen__flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full-screen__list {
+  max-width: 550px;
+  margin: 0px 0px 40px 0px;
+}
+
+.full-screen__item {
+  font-size: 20px;
+  color: #f0f0f0;
+  list-style: none;
+}
+
+.full-screen__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.full-screen__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .full-screen__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .full-screen__item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .full-screen__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .full-screen__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0px 20px 0px;
+  }
+  .full-screen__image img {
+    width: 80%;
+  }
+  .full-screen__flexContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.product-content {
+  padding: 50px 15px;
+}
+
+.product-content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-content__product {
+  margin: 0 90px;
+}
+
+.product-content__product img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-content__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.product-content__card:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.product-content__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.product-content__image img {
+  width: 100%;
+}
+
+.product-content__text {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.product-content__button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .product-content__image {
+    width: 120px;
+    height: 120px;
+  }
+  .product-content__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-content__image {
+    width: 100px;
+    height: 100px;
+  }
+  .product-content__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product-content__image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-content__product {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .product-content__product {
+    margin: 0 25px;
+  }
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 15px;
+}
+
+.reviews__slider {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.reviews__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.reviews__image img {
+  width: 100%;
+}
+
+.reviews__textBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reviews__text {
+  font-size: 22px;
+  width: 510px;
+}
+
+.reviews .slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 810px) {
+  .reviews__slider {
+    width: 700px;
+  }
+  .reviews__text {
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 711px) {
+  .reviews__slider {
+    width: 550px;
+  }
+  .reviews__text {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .reviews__slider {
+    width: 450px;
+  }
+  .reviews__title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .reviews__text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .reviews .slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .reviews__slider {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .reviews__slider {
+    width: 300px;
+  }
+}
+
+.product {
+  padding: 50px 15px;
+}
+
+.product__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__image {
+  margin-right: 35px;
+}
+
+.product__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__description {
+  max-width: 535px;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__item {
+  list-style: none;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.product__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .product__description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product__item {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .product__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .product__flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product__description {
+    text-align: center;
+  }
+  .product__button {
+    margin-bottom: 20px;
+  }
+}
+
+.booking {
+  padding: 50px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__title {
+  text-align: center;
+  font-size: 54px;
+  line-height: 62px;
+  margin-bottom: 20px;
+  letter-spacing: 25px;
+}
+
+.booking__countDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 70px;
+}
+
+.booking__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__image {
+  margin: 0 0px 30px 0px;
+}
+
+.booking__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.booking__blockPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__price {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.booking__price:hover, .booking__price :focus, .booking__price :active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 5px #db54a7);
+          filter: drop-shadow(1px 1px 5px #db54a7);
+}
+
+.booking__priceOff {
+  font-size: 18px;
+  line-height: 22px;
+  color: #7d7d7d;
+  text-decoration: line-through;
+}
+
+.booking__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 100px;
+}
+
+.booking__formName, .booking__formTelephone {
+  position: relative;
+}
+
+.booking label[for="userNumber"],
+.booking label[for="userName"] {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.booking input[type="number"],
+.booking input[type="text"] {
+  width: 260px;
+  height: 60px;
+  padding-left: 15px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.booking input[type="number"]:focus,
+.booking input[type="text"]:focus {
+  outline: 0;
+  border-color: #F77A52;
+}
+
+.booking input::-webkit-outer-spin-button,
+.booking input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.booking input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.booking input[type="number"],
+.booking input[type="text"]:focus {
+  outline-color: #6F0F4A;
+}
+
+.booking__clue {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  display: inline-block;
+  color: #e17373;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: all .09s ease-out;
+  transition: all .09s ease-out;
+}
+
+.booking__clue:before {
+  content: attr(data-clue);
+  position: absolute;
+  bottom: 100%;
+  left: 169px;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+  width: 300px;
+  font-size: 14px;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.booking__clue:hover:before {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  bottom: calc( 100% + -10px);
+}
+
+.booking__button {
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #6F0F4A;
+  color: #fff;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+  .booking__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .booking__image img {
+    width: 80%;
+  }
+  .booking__info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking__form {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .booking__title {
+    font-size: 44px;
+  }
+  .booking__form {
+    padding: 10px 50px;
+  }
+  .booking__clue:before {
+    left: 125px;
+    width: 200px;
+  }
+  .booking__image img {
+    width: 60%;
+  }
+  .booking__price {
+    font-size: 20px;
+  }
+  .booking__priceOff {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .booking__clue:before {
+    left: 105px;
+    width: 150px;
+  }
+  .booking__price {
+    font-size: 16px;
+  }
+  .booking__priceOff {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #6F0F4A;
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 730px) {
+  .btn {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
